@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <input type="radio" id="h1" name="2" value="2">
+        <label for="2">2</label><br>
+        <input type="radio" id="h1" name="3" value="3">
+        <label for="3">3</label><br>
+        <input type="radio" id="h1" name="4" value="4">
+        <label for="4">4</label><br>
+        <input type="radio" id="h1" name="5" value="5">
+        <label for="5">5</label><br>
+        <input type="radio" id="h1" name="6" value="6">
+        <label for="6">6</label><br>
+                
+    </div>
+    <p id="h1"></p>
+    <script>
+        (function() {
+            var rows = '';
+            for( var i = 0; i <= 10; i++ )
+            {
+                rows += '<tr id = "row' + i + '"><td>...</td></tr>';
+            }
+            document.getElementById('h1').innerHTML = rows;
+        }
+        );
+        </script>
+        
+</body>
+</html>
